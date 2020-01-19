@@ -17,6 +17,7 @@ for index in range(3, upper_bound):
         if is_prime(index): 
             #print('{0} : prime'.format(n)) 
             primes.append(index)  
-
+    if len(primes) == 100000000:
+        break
             
 print('There are {0} primes from 1 to {1}. The last prime is {2}'.format(len(primes),upper_bound,primes[-1]))
